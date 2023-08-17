@@ -1,0 +1,16 @@
+nav{
+ .active{
+    position: relative;
+  }
+  .active::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 4px;
+    height: 28px;
+    background-color:$success;
+  }
+}
+img{
+  object-fit: cover;
+}

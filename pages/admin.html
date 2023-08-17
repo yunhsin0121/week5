@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Admin</title>
+  </head>
+  <body class="d-flex">
+    <%- include('./layout/sidebar'); -%>
+    <main class="container">
+      <header class="row py-7 align-items-center">
+        <div class="col d-flex align-items-center">
+          <h2 class="fs-4 fw-bold mb-0 me-9">Admin</h2>
+          <a href="#" class="link-dark fw-bolder d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#add"><span class="material-icons text-success me-2">add</span>Add New Admin</a>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-end">
+              <a href="#" class="text-dark me-5">
+                  <span class="material-icons align-middle">search</span>
+              </a>
+              <a href="#" class="text-dark">
+                  <span class="material-icons align-middle">notifications_active</span>
+              </a>
+          </div>
+      </div>
+    </header>
+      <section class="mb-11">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col" class="pb-1">ID<span class="material-icons align-middle text-success ms-2">arrow_downward</span></th>
+              <th scope="col" class="pb-1">Name</th>
+              <th scope="col" class="pb-1">Email</th>
+              <th scope="col" class="pb-1">Verified</th>
+              <th scope="col" class="pb-1"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">#1</td>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark" data-bs-toggle="modal" data-bs-target="#info"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark" data-bs-toggle="modal" data-bs-target="#edit"><span class="material-icons">edit</span></a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">#2</td>
+              <td>Zaina Goldsmith</td>
+              <td>zaina.goldsmith@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+              </td>
+            </tr> 
+            <tr>
+              <td scope="row">#3</td>
+              <td>Mahima Lopez</td>
+              <td>mahima.lopez@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+              </td>
+            </tr> 
+            <tr>
+              <td scope="row">#4</td>
+              <td>Pharrell Murray</td>
+              <td>pharrell.murray@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">#5</td>
+              <td>Annika Mcbride</td>
+              <td>annika.mcbride@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">#6</td>
+              <td>Fatimah Clark</td>
+              <td>fatimah.clark@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">#7</td>
+              <td>Klaudia Rhodes</td>
+              <td>klaudia.rhodes@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">#8</td>
+              <td>Tillie Lucero</td>
+              <td>tillie.lucero@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">#9</td>
+              <td>Sabrina Stephenson</td>
+              <td>sabrina.stephenson@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">#10</td>
+              <td>Annie Smith</td>
+              <td>annie.smith@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <a href="#" class="link-dark"><span class="material-icons me-5">visibility</span></a>
+                <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <nav class="d-flex justify-content-end">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link h-100 link-success p-1" href="#"><span class="material-icons align-middle">chevron_left</span></a></li>
+            <li class="page-item"><a class="page-link h-100 active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link h-100" href="#">2</a></li>
+            <li class="page-item"><a class="page-link h-100" href="#">3</a></li>
+            <li class="page-item"><a class="page-link h-100 link-success p-1" href="#"><span class="material-icons align-middle">chevron_right</span></a></li>
+          </ul>
+        </nav>
+      </section>
+      <!-- info Modal -->
+      <div class="modal fade" id="info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body d-flex justify-content-between align-items-center">
+              <div class="col-4 me-5 align-self-start">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emir.jpeg?raw=true" class="img-fluid" style="width: 140px;height: 140px;"> 
+              </div>
+              <div class="col-7">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-2">#1</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> 
+                <p class="mb-0">Admin</p>
+                <h3 class="mb-2 fs-4 fw-bold">Emir Wicks</h3>
+                <p class="mb-5 text-secondary">emir.wicks@mail.com</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="bg-light py-1 px-2">Verified</span>
+                  <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                    <span class="material-icons text-success open">expand_more</span>
+                    <span class="material-icons text-success close">expand_less</span>
+                  </a>
+                </div>
+                <div class="col-7">
+                  <div class="collapse" id="collapseExample">
+                    <div class="d-flex mt-6">
+                      <button class="btn btn-outline-danger py-2 px-7 me-4">Deactivate</button>
+                      <button class="btn btn-success py-2 px-7" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- add Modal -->
+      <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-between align-items-center mb-7">
+                <h3 class="fs-4 fw-bold">New Admin</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <form action="#">
+                <h4 class="fs-5 fw-bold mb-4">Account</h4>
+                <div class="mb-4">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" id="name" class="form-control">
+                </div>
+                <div class="mb-5">
+                  <label for="email" class="form-label">Name</label>
+                  <input type="email" id="email" class="form-control">
+                </div>
+                <hr>
+                <h4 class="fs-5 fw-bold mb-4">Verification</h4>
+                <p class="fw-bold d-flex align-items-center mb-4"><span class="material-icons text-danger me-2">report_problem</span>Unverified</p>
+                <button class="btn btn-outline-success w-100 py-4 mb-2 rounded-0 border-light-gray">Send Verification Mail</button>
+                <hr>
+                <h4 class="fs-5 fw-bold mb-4">Access Level</h4>
+                <div class="dropdown mb-4">
+                  <button class="btn btn-outline-dark w-100 text-start py-4 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    -Choose access level-
+                  </button>
+                  <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <hr>
+                <h4 class="fs-5 fw-bold mb-4">Custom Access</h4>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Lecture" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Lecture
+                  </label>
+                </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Coupon" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Coupon
+                  </label>
+                </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Message" id="defaultCheck3">
+                  <label class="form-check-label" for="defaultCheck3">
+                    Message
+                  </label>
+                </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Setting" id="defaultCheck4">
+                  <label class="form-check-label" for="defaultCheck4">
+                    Setting
+                  </label>
+                </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Task Menu" id="defaultCheck5">
+                  <label class="form-check-label" for="defaultCheck5">
+                    Task Menu
+                  </label>
+                </div>
+              </form>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-outline-success px-7 py-2 me-4" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success px-7 py-2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- edit Modal -->
+      <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-between align-items-center mb-7">
+                <h3 class="fs-4 fw-bold">Edit Admin</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <form action="#">
+                <h4 class="fs-5 fw-bold mb-4">Account</h4>
+                <div class="mb-4">
+                  <label for="membername" class="form-label">Name</label>
+                  <input type="text" id="membername" class="form-control bg-light" value="Emir Wicks" readonly>
+                </div>
+                <div class="mb-5">
+                  <label for="memberemail" class="form-label">Name</label>
+                  <input type="email" id="memberemail" class="form-control bg-light" value="emir.wicks@mail.com" readonly>
+                </div>
+                <hr>
+                <h4 class="fs-5 fw-bold mb-4">Verification</h4>
+                <p class="fw-bold d-flex align-items-center mb-4"><span class="material-icons text-success me-2">check_circle</span>Verified</p>
+                <button class="btn btn-white w-100 py-4 mb-2 rounded-0 border-light-gray text-light-gray" disabled>Send Verification Mail</button>
+                <hr>
+                <h4 class="fs-5 fw-bold mb-4">Access Level</h4>
+                <div class="dropdown mb-4">
+                  <button class="btn btn-outline-dark w-100 text-start py-4 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Admin
+                  </button>
+                  <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <hr>
+                <h4 class="fs-5 fw-bold mb-4">Custom Access</h4>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Lecture" id="defaultCheck6">
+                  <label class="form-check-label" for="defaultCheck6">
+                    Lecture
+                  </label>
+                </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Coupon" id="defaultCheck7">
+                  <label class="form-check-label" for="defaultCheck7">
+                    Coupon
+                  </label>
+                </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Message" id="defaultCheck8">
+                  <label class="form-check-label" for="defaultCheck8">
+                    Message
+                  </label>
+                </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Setting" id="defaultCheck9">
+                  <label class="form-check-label" for="defaultCheck9">
+                    Setting
+                  </label>
+                </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="Task Menu" id="defaultCheck10">
+                  <label class="form-check-label" for="defaultCheck10">
+                    Task Menu
+                  </label>
+                </div>
+                <hr>
+                <h4 class="fs-5 fw-bold mb-4">Deactivate Account</h4>
+                <p class="text-danger d-flex align-items-center mb-4"><span class="material-icons text-danger me-2">report_problem</span>This cannot be undone!</p>
+                <button type="button" class="btn btn-outline-danger w-100 py-4 mb-9">Deactivate This Account</button>
+              </form>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-outline-success px-7 py-2 me-4" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success px-7 py-2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body> 
+</html>

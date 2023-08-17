@@ -4,57 +4,198 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/week5/assets/main-71c30259.js"></script>
-    <link rel="stylesheet" href="/week5/assets/main-accf464b.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Assignment</title>
+    <script type="module" crossorigin src="/week5/assets/main-11e6932d.js"></script>
+    <link rel="stylesheet" href="/week5/assets/main-c6bab650.css">
   </head>
-  <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="/week5/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
+  <body class="d-flex">
+    <nav class="min-vh-100 py-7 bg-light d-flex flex-column justify-content-between" style="width: 296px;">
+    <div>
+        <h1><a href="index.html"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/week5/logo-ANSWER.svg" class="img-fluid mb-7 px-7" alt="logo"></a></h1>
+        <ul class="list-unstyled text-gray-900">
+            <li class="mb-6 px-7">
+                <a href="#" class="text-dark fw-bold">
+                <span class="material-icons me-4 align-middle">assessment</span>
+                Dashboard
+                </a>
+            </li>
+            <li class="mb-6 px-7">
+                <a href="#" class="text-dark fw-bold">
+                    <span class="material-icons me-4 align-middle">question_answer</span>
+                Question
+                </a>
+            </li>
+            <li class="mb-6 px-7">
+                <a href="index.html" class="text-success fw-bold">
+                    <span class="material-icons me-4 align-middle">assignment</span>
+                Assignment
+                </a>
+            </li>
+            <li class="mb-6 px-7">
+                <a href="#" class="text-dark fw-bold">
+                    <span class="material-icons me-4 align-middle">video_library</span>
+                Course
+                </a>
+            </li>
+            <li class="mb-6 px-7">
+                <a href="admin.html" class="text-dark fw-bold">
+                    <span class="material-icons me-4 align-middle">supervisor_account</span>
+                Admin
+                </a>
+            </li>
+            <li class="mb-6 px-7">
+                <a href="#" class="text-dark fw-bold">
+                <span class="material-icons me-4 align-middle">settings</span>
+                Settings
+                </a>
+            </li>
+        </ul>
     </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
+    <div class="d-flex align-items-center px-7">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" class="img-fluid rounded-circle me-4" alt="andychen-image" style="height: 40px;width: 40px;">
+        <div class="lh-sm">
+            <p class="fw-bold mb-1">Andy Chen</p>
+            <p class="text-gray mb-1 fs-7">andy0401@mail.com</p>
         </div>
-      </div>
     </div>
-
-    <footer class="footer">我是 footer</footer>
+</nav>    <main class="container">
+        <header class="row justify-content-between py-7">
+            <div class="col d-flex align-items-center">
+                <h2 class="fs-4 fw-bold mb-0 me-9">Assignment</h2>
+                <div class="dropdown mb-4"></div>
+                    <a href="#" class="mb-0 fw-bold link-dark d-flex align-items-center" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">All Courses  <span class="material-icons text-success">expand_more</span></a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-end">
+                    <a href="#" class="text-dark me-5">
+                        <span class="material-icons align-middle">search</span>
+                    </a>
+                    <a href="#" class="text-dark">
+                        <span class="material-icons align-middle">notifications_active</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="row">
+            <div class="col-5">
+                <div class="dropdown mb-1">
+                <a href="#" class="text-dark fw-bold" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">All (4)<span class="material-icons text-success align-middle ms-2">expand_more</span></a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item ist-group-item-action active p-3" aria-current="true">
+                        <div class="d-flex justify-content-between fs-8 text-dark">
+                            <p class="mb-0">Chapter Assignment 2</p>
+                            <time>4 hrs ago</time>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0 fw-bold text-dark fs-6">Please check this file…</h4>
+                            <small class="text-gray fs-8">Emily Wang</small>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
+                        <div class="d-flex justify-content-between fs-8">
+                            <p class="mb-0">Chapter Assignment 1</p>
+                            <time>12 hrs ago</time>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0 fw-bold fs-6">My Homework</h4>
+                            <small class="text-gray fs-8">David Xu</small>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
+                        <div class="d-flex justify-content-between fs-8">
+                            <p class="mb-0">Final Assignment</p>
+                            <time>18 hrs ago</time>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0 fw-bold fs-6">Have a problem with this…</h4>
+                            <small class="text-gray fs-8">Tony Wei</small>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
+                        <div class="d-flex justify-content-between fs-8">
+                            <p class="mb-0">Final Assignment</p>
+                            <time>19 hrs ago</time>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0 fw-bold fs-6">Did I do it right?</h4>
+                            <small class="text-gray fs-8">Christina Lin</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-7">
+                <p class="text-end mb-2 fs-8">2 comments</p>
+                <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center p-3">
+                        <div>
+                            <p class="mb-1 fs-8">Chapter Assignment 2 / HTML&CSS</p>
+                            <h4 class="mb-0 fw-bold fs-6">Please check this file for me, thanks!</h4>
+                        </div>
+                        <a href="#" class="link-dark"><span class="material-icons">more_vert</span></a>
+                    </div>
+                    <div class="card-body d-flex pb-0">
+                        <div>
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emilywang.jpeg?raw=true" class="rounded-circle me-2" alt="emilywang-image" style="width: 40px;height: 40px;">
+                        </div>
+                        <div class="pb-4 border-bottom border-light-gray">
+                            <div class="mb-4">
+                                <h6 class="fw-bold mb-1">Emily Wang</h6>
+                                <time class="text-gray fs-7">10:38 AM (4 hours ago)</time>
+                            </div>
+                            <p class="card-text fs-7 mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the<code class="bg-light text-success"> div </code>v  is bigger than the height of the <code class="bg-light text-success">img </code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br> What is the gap or extra space below image?</p>
+                            <a href="#" class="btn btn-light py-2 px-3 border border-light-gray fw-bold"><span class="material-icons align-middle me-2">attach_file </span>HW-2-David.zip</a>
+                        </div>      
+                    </div>
+                    <div class="card-body d-flex">
+                        <div>
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" class="rounded-circle me-2" alt="andychen-image" style="width: 40px;height: 40px;">
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-4">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Andy Chen (You)</h6>
+                                    <time class="text-gray fs-7">13:24 AM (1 hours ago)</time>
+                                </div>
+                                <div>
+                                    <a href="#" class="link-dark"><span class="material-icons me-2">star_outline</span></a>
+                                    <a href="#" class="link-dark"><span class="material-icons">edit</span></a>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 mb-4">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                            <p>You can: </p>
+                            <ul class="mb-1">
+                                <li>adjust the <code class="bg-light text-success">vertical-align</code>    of the image to position it elsewhere (e.g. the <code class="bg-light text-success">middle</code>   le  ) or 　</li>
+                                <li>change the <code class="bg-light text-success">display</code> so it isn’t inline.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <a href="#" class="link-dark"><span class="material-icons me-5">chevron_left</span></a>
+                        <a href="#" class="link-dark"><span class="material-icons">chevron_right</span></a>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-success px-7 me-4">Mark as read</button>
+                        <button class="btn btn-success px-6" id="Reply">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
   </body>
 </html>
